@@ -51,9 +51,9 @@ axios.get('https://fakestoreapi.com/products')
     document.execCommand('insertText', false, message)
     textareaEl.dispatchEvent(new Event('change', { bubbles: true }))
   
-    // setTimeout(() => {
-    //   (mainEl.querySelector('[data-testid="send"]') || mainEl.querySelector('[data-icon="send"]')).click()
-    // }, 100)
+    setTimeout(() => {
+       (mainEl.querySelector('[data-testid="send"]') || mainEl.querySelector('[data-icon="send"]')).click()
+     }, 100)
   }
 
 
