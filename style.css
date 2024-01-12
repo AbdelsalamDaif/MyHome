@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+ .findwhatyouneed{
+    background-image: url("./images/afterheader.webp"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 400px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+ }
+.web_container{
+    width: 1300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.web_container_left{
+    width: 20%;
+    height: 100%;
+    background-color: red;
+    color: aliceblue;
+}
+
+.web_container_right{
+    width: 80%;
+    min-height: 50rem;
+    background-color: rgb(146, 136, 136);
+    color: rgb(12, 47, 78);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.property_card{
+    width: 32rem;
+    display: flex;
+}
+
+.property_image{
+    max-height: 25rem;
+}
+.property_rooms{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    gap: 3rem;
+}

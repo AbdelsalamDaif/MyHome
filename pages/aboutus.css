@@ -1,0 +1,79 @@
+
+
+.aboutus_container{
+    width: 1300px;
+    margin: auto;
+}
+.aboutus{
+    width: 100%;
+    display: flex;
+}
+.aboutus_left{
+    width: 50%;
+    height: 750px;
+    background-image: url("../images/aboutus/about-us-woman.png"); /* The image used */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-radius: 15px;
+}
+
+.aboutus_right{
+    width: 50%;
+    padding-left: 5rem;
+}
+
+.aboutus_right h3{
+    color: dark;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 70px;
+    margin: 16px 0 0;
+}
+.aboutus_right p{
+    color: dark;
+    font-size: 30px;
+    font-weight: 300;
+    /* line-height: 70px; */
+    margin: 16px 0 0;
+}
+.aboutus_right ul li{
+    list-style: none;
+
+
+}
+.text_inner_list_left_icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #6f49e8;
+    text-align: center;
+}
+
+.ions_container{
+    width: 1300px;
+    margin: auto;
+}
+.ions_main{
+    width: 100%;
+    display: flex;
+    margin-top: 5rem;
+    background-color: blue;
+    color: white;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons_sub{
+    width: 20%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    /* line-height: 20px; */
+}
+.icons_sub img{
+    width: 90px;
+    height: 90px;
+}
