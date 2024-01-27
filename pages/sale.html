@@ -2,19 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="../pages/login.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="../style.css">
+  <title>Sale</title>
 </head>
 
 <body>
-     <!-- start nav section -->
+
+
+  <!-- start nav section -->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -26,10 +32,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./../index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./rent.html">For Rent </a>
+            <a class="nav-link active" href="./rent.html">For Rent </a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="./sale.html">For Sale</a>
@@ -43,10 +49,10 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             <li class="nav-item">
-              <a class="nav-link active" href="./login.html">Login</a>
+              <a class="nav-link active" href="./pages/login.html">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./register.html">Register</a>
+              <a class="nav-link active" href="./pages/register.html">Register</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#"> <i class="fa-solid fa-user"></i> Logout</a>
@@ -57,77 +63,69 @@
     </div>
   </nav>
 
-  <!-- end nav section -->
-    <section class="login_text">
-        <!-- #e5e0ff -->
-        <div class="login_text_left">
-            <p class="main_text">Sign In </p>
-            <p>Home/Sign In</p>
+  <!-- start after nav image  -->
 
-        </div>
-        <div class="login_text_right">
-            <img style="width: 5rem; height: 5rem;" src="../images/login/login-img1.png" alt="img">
-            <img style="width: 5rem; height: 5rem;" src="../images/login/login-img2.png" alt="img2-">
-            <img style="width: 5rem; height: 5rem;" src="../images/login/login-img3.png" alt="img2">
-            <img style="width: 5rem; height: 5rem;" src="../images/login/login-img4.png" alt="img4">
+  <div class="findwhatyouneed">
+    <form>
+      <div class="search_form form-row">
 
-
-
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInputGroup">City or Street Name</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend input_location">
+              <div class="input-group-text"> <i class="fa-solid fa-location-dot"></i> </div>
+            </div>
+            <input type="text" class="form-control input_city" id="inlineFormInputGroup" placeholder="Cityname">
+          </div>
         </div>
 
-    </section>
 
-    <section class="login_form col-12">
-
-        <div class="login_form_left col-12 col-md-5 col-lg-5">
-
+        <div class="form-group col-md-2">
+          <select id="inputState" class="form-control">
+            <option selected>For Sale</option>
+            <option>For Rent</option>
+            <option>For Exchange</option>
+          </select>
         </div>
 
-        <div class="login_form_right col-12 col-md-5 col-lg-5">
-            <!-- #f7f5ff -->
-            <form>
-                <h3>login</h3>
-                <div class="form-row">
-
-                    <div class="col-10">
-                        <label for="validationDefaultUsername">Username or Email</label>
-                        <div class="input-group">
-
-                            <input type="text" class="form-control" id="validationDefaultUsername"
-                                placeholder="Username" aria-describedby="inputGroupPrepend2" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-row">
-
-                    <div class="col-10">
-                        <label for="validationDefault04">Password*</label>
-                        <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
-                    </div>
-
-                </div>
-                <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input check_box" type="checkbox" value=" Remember Me"
-                            id="invalidCheck2" required>
-                        <label class="form-check-label" for="invalidCheck2">
-                            Remember Me
-                        </label>
-                    </div>
-                </div>
-                <button class="btn btn-primary form-control" type="submit">Login</button>
-            </form>
-
+        <div class="form-group col-md-2">
+          <select id="inputState" class="form-control">
+            <option selected>Properties</option>
+            <option>Villa</option>
+            <option>Apartment</option>
+          </select>
         </div>
 
-    </section>
+        <div class="col">
+          <input type="text" class="price_range form-control" placeholder="max Price" onclick="getPrice()">
+          <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+          </button> -->
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">Submit</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+  <!-- end after nav image  -->
 
 
+  <div class="container-fluid ">
+    <div class="web_container">
+      <div class="web_container_left">
+        <p> left a side </p>
+      </div>
+      <div class="web_container_right">
 
+      </div>
+    </div>
 
-    <!-- start foote -->
-   <!-- Footer -->
-   <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <!-- Left -->
@@ -248,9 +246,12 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <!-- end footer  -->
-
+  <script src="../index.js"></script>
 </body>
 
 </html>
